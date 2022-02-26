@@ -4,19 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>QuadB Assignment</title>
+    <style>
+        .top-area{
+            background: #1a1a1a;
+        }
+        .inline-block{
+            display: inline-block;
+        }
+        .widget-head{
+            background: linear-gradient(90deg,#3023ae,#c86dd7);
+        }
+        .widget-head>span>svg{
+            width: 25px;
+            height: 21px;
+        }
+        .white-text{
+            color:white;
+        }
+        .main-area{
+            background-color: black;
+        }
+        .main-area>img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .search-form>.nav>.nav-item>a:hover{
+            background-color: white;
+            color: black;
+        }
+        .search-form>.nav>.nav-item>a{
+            display: block;
+            color: white;
+        }
+        .search-form>.nav>.nav-item>a{
+            text-decoration: none;
+        }
+        .search-form{
+            background-color: red;
+        }
+        a.active{
+            background-color: white;
+            color: black !important;
+        }
+
+    </style>
 </head>
 <body>
     <div class="container-fluid">
         <div class="top-area">
-            <p>Top area</p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="headerlinks inline-block">
+                            <select name="language" id="language">
+                                <option value="english">English</option>
+                                <option value="hindi">Hindi</option>
+                                <option value="marathi">Marathi</option>
+                            </select>
+                        </div>
+                        <span class="white-text">|</span>
+                        <div class="inline-block white-text">Epaper</div>
+                        <span class="white-text">|</span>
+                        <div class="inline-block white-text">GadgetsNow</div>
+                    </div>
+                    <div class="col-md-7 text-end">
+                        <div class="widget-head inline-block">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M576 136c0 22.09-17.91 40-40 40c-.248 0-.4551-.1266-.7031-.1305l-50.52 277.9C482 468.9 468.8 480 453.3 480H122.7c-15.46 0-28.72-11.06-31.48-26.27L40.71 175.9C40.46 175.9 40.25 176 39.1 176c-22.09 0-40-17.91-40-40S17.91 96 39.1 96s40 17.91 40 40c0 8.998-3.521 16.89-8.537 23.57l89.63 71.7c15.91 12.73 39.5 7.544 48.61-10.68l57.6-115.2C255.1 98.34 247.1 86.34 247.1 72C247.1 49.91 265.9 32 288 32s39.1 17.91 39.1 40c0 14.34-7.963 26.34-19.3 33.4l57.6 115.2c9.111 18.22 32.71 23.4 48.61 10.68l89.63-71.7C499.5 152.9 496 144.1 496 136C496 113.9 513.9 96 536 96S576 113.9 576 136z"/></svg>
+                                <span class="white-text">Keep reading, keep earning TimesPoints!!</span>
+                            </span>
+                        </div>
+                        <div class="login-button inline-block white-text">SIGN IN</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="main-area">
-            <p>Main area </p>
+            <img class="img-fluid" src="./resources/Logo.PNG" alt="logo">
         </div>
         <div class="search-form">
-            <p>Search form </p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="active">Latest news</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most shared</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most read</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most commented</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most popular news</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Delhi elecion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Bihar elecion</a>
+                </li>
+            </ul>
         </div>
         <div class="nav-breadcrumb">
             <p>Nav Breadcrumb</p>
@@ -24,7 +116,7 @@
         <div class="content container">
             <h1>Latest News</h1>
             <div class="row">
-                <div class="main-content col-md-7">
+                <div class="main-content col-md-8">
                     <ul>
                         <li>1</li>
                         <li>2</li>
@@ -33,7 +125,7 @@
                         <li>5</li>
                     </ul>
                 </div>
-                <div class="sidebar col-md-5">
+                <div class="sidebar col-md-4">
                     <ul>
                         <li>1</li>
                         <li>2</li>

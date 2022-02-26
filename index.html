@@ -53,6 +53,38 @@
             text-transform: uppercase;
             border-bottom: 2px solid black;
         }
+        .sidebar>div>ul>li{
+            list-style-type: none;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 0 15px;
+        }
+        ul>li>div>div>a>img{
+            object-fit: cover;
+        }
+        .main-content>ul>li{
+            list-style-type:none;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 15px 0 15px;
+        }
+        .main-content>ul>li>div>.col-md-3{
+            display: flex;
+            justify-content: center;
+        }
+        span.more{
+            display: block;
+            border-top: 1px solid #000;
+            position: relative;
+            margin-left: 32px;
+        }
+        span.more>a{
+            top: -12px;
+            position: absolute;
+            text-decoration: none !important;
+            color: black;
+            background: white;
+            padding: 0 5px;
+            left: 75px;
+        }
 
     </style>
 </head>
@@ -116,6 +148,7 @@
                 </ul>
             </div>
         </div>
+    </div>
         <div class="content container">
             <div class="nav-breadcrumb">
                   <a title="Home" href="/">News</a>&nbsp; &#8811; &nbsp; Latest News
@@ -128,26 +161,105 @@
             <div class="row">
                 <div class="main-content col-md-8">
                     <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li>
+                            <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./resources/news1.PNG" class="img-fluid" alt="news 1">
+                                        </a>
+                                    </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <a href="">
+                                            Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="./resources/news2.PNG" class="img-fluid" alt="news 1">
+                                        </a>
+                                    </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <a href="">
+                                            Why India is walking tightrope amid calls for Russia's isolation
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <!-- <a href="#"> -->
+                                        <img src="./resources/news3.PNG" class="img-fluid" alt="news 3">
+                                    <!-- </a> -->
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <a href="">
+                                            Upen Biswas, the man who brought down Lalu Prasad
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <span>
+                                            Arresting Lalu Prasad was a near-impossible task back in 1997. But CBI’s Upendra Nath Biswas played a nail-biting game to bring the powerful politician to justice
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="sidebar col-md-4">
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </ul>
+                    <div class="widget-1">
+                        <ul>
+                            <div class="row">
+                                <h5>MOST POPULAR</h5>
+                            </div>
+                            <li>
+                                <div class="row">
+                                    <div class="col">
+                                        Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta velit quisquam tempora accusantium eligendi suscipit, ratione dolorem laborum sed aspernatur natus officiis error dignissimos nemo minus qui tenetur in illum.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col">
+                                        Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col">
+                                        Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="more">
+                        <a href="#">SEE ALL MOST SHARED STORIES</a>
+                    </span>
                 </div>
             </div>
         </div>
 
-    </div>
+    
     <footer>
 
     </footer>

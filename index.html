@@ -31,15 +31,15 @@
             margin-left: auto;
             margin-right: auto;
         }
-        .search-form>.nav>.nav-item>a:hover{
+        .search-form>.container>.nav>.nav-item>a:hover{
             background-color: white;
             color: black;
         }
-        .search-form>.nav>.nav-item>a{
+        .search-form>.container>.nav>.nav-item>a{
             display: block;
             color: white;
         }
-        .search-form>.nav>.nav-item>a{
+        .search-form>.container>.nav>.nav-item>a{
             text-decoration: none;
         }
         .search-form{
@@ -48,6 +48,10 @@
         a.active{
             background-color: white;
             color: black !important;
+        }
+        .hd1{
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
         }
 
     </style>
@@ -86,35 +90,41 @@
             <img class="img-fluid" src="./resources/Logo.PNG" alt="logo">
         </div>
         <div class="search-form">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="#" class="active">Latest news</a> 
-                </li>
-                <li class="nav-item">
-                    <a href="#">Most shared</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Most read</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Most commented</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Most popular news</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Delhi elecion</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Bihar elecion</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-breadcrumb">
-            <p>Nav Breadcrumb</p>
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="active">Latest news</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Most shared</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Most read</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Most commented</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Most popular news</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Delhi elecion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Bihar elecion</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="content container">
-            <h1>Latest News</h1>
+            <div class="nav-breadcrumb">
+                  <a title="Home" href="/">News</a>&nbsp; &#8811; &nbsp; Latest News
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="hd1">Latest News</h1>
+                </div>
+            </div>
             <div class="row">
                 <div class="main-content col-md-8">
                     <ul>

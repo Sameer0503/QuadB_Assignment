@@ -5,91 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
     <title>QuadB Assignment</title>
-    <style>
-        .top-area{
-            background: #1a1a1a;
-        }
-        .inline-block{
-            display: inline-block;
-        }
-        .widget-head{
-            background: linear-gradient(90deg,#3023ae,#c86dd7);
-        }
-        .widget-head>span>svg{
-            width: 25px;
-            height: 21px;
-        }
-        .white-text{
-            color:white;
-        }
-        .main-area{
-            background-color: black;
-        }
-        .main-area>img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .search-form>.container>.nav>.nav-item>a:hover{
-            background-color: white;
-            color: black;
-        }
-        .search-form>.container>.nav>.nav-item>a{
-            display: block;
-            color: white;
-        }
-        .search-form>.container>.nav>.nav-item>a{
-            text-decoration: none;
-        }
-        .search-form{
-            background-color: red;
-        }
-        a.active{
-            background-color: white;
-            color: black !important;
-        }
-        .hd1{
-            text-transform: uppercase;
-            border-bottom: 2px solid black;
-        }
-        .sidebar>div>ul>li{
-            list-style-type: none;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 15px 0 15px;
-        }
-        ul>li>div>div>a>img{
-            object-fit: cover;
-        }
-        .main-content>ul>li{
-            list-style-type:none;
-            border-bottom: 1px solid #e5e5e5;
-            padding: 15px 0 15px;
-        }
-        .main-content>ul>li>div>.col-md-3{
-            display: flex;
-            justify-content: center;
-        }
-        span.more{
-            display: block;
-            border-top: 1px solid #000;
-            position: relative;
-            margin-left: 32px;
-        }
-        span.more>a{
-            top: -12px;
-            position: absolute;
-            text-decoration: none !important;
-            color: black;
-            background: white;
-            padding: 0 5px;
-            left: 75px;
-        }
-
-    </style>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid no-padding">
         <div class="top-area">
             <div class="container">
                 <div class="row">
@@ -121,44 +41,46 @@
         <div class="main-area">
             <img class="img-fluid" src="./resources/Logo.PNG" alt="logo">
         </div>
-        <div class="search-form">
-            <div class="container">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="#" class="active">Latest news</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Most shared</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Most read</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Most commented</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Most popular news</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Delhi elecion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Bihar elecion</a>
-                    </li>
-                </ul>
-            </div>
+    </div>
+    <div class="search-form sticky-top">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="active">Latest news</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most shared</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most read</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most commented</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Most popular news</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Delhi elecion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Bihar elecion</a>
+                </li>
+            </ul>
         </div>
     </div>
         <div class="content container">
-            <div class="nav-breadcrumb">
-                  <a title="Home" href="/">News</a>&nbsp; &#8811; &nbsp; Latest News
+            <div class="nav-breadcrumb row">
+                <div class="col">
+                    <a title="Home" href="/">News</a>&nbsp; &#8811; &nbsp; Latest News
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="hd1">Latest News</h1>
                 </div>
             </div>
-            <div class="row">
+            <div class="row center-content">
                 <div class="main-content col-md-8">
                     <ul>
                         <li>
@@ -196,9 +118,9 @@
                         <li>
                             <div class="row">
                                 <div class="col-md-3">
-                                    <!-- <a href="#"> -->
+                                    <a href="#">
                                         <img src="./resources/news3.PNG" class="img-fluid" alt="news 3">
-                                    <!-- </a> -->
+                                    </a>
                                 </div>
                                 <div class="col-md-9">
                                     <div class="row">
@@ -223,45 +145,170 @@
                                 <h5>MOST POPULAR</h5>
                             </div>
                             <li>
+                                <a href="#">
+                                    Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                </a>
+                            </li>
+                        </ul>
+                        <div style="margin-bottom:15px">
+                            <span class="more">
+                                <a href="#">SEE ALL MOST SHARED STORIES</a>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div class="widget-2">
+                        <ul>
+                            <div class="row">
+                                <h5>ENTERTAINMENT NEWS</h5>
+                            </div>
+                            <li>
                                 <div class="row">
-                                    <div class="col">
-                                        Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                        <div class="col-md-3">
+                                            <a href="#">
+                                                <img src="./resources/news1.PNG" class="img-fluid" alt="news 1">
+                                            </a>
+                                        </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <a href="">
+                                                Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="row">
-                                    <div class="col">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta velit quisquam tempora accusantium eligendi suscipit, ratione dolorem laborum sed aspernatur natus officiis error dignissimos nemo minus qui tenetur in illum.
+                                        <div class="col-md-3">
+                                            <a href="#">
+                                                <img src="./resources/news2.PNG" class="img-fluid" alt="news 1">
+                                            </a>
+                                        </div>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <a href="">
+                                                Why India is walking tightrope amid calls for Russia's isolation
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="row">
-                                    <div class="col">
-                                        Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                    <div class="col-md-3">
+                                        <!-- <a href="#"> -->
+                                            <img src="./resources/news3.PNG" class="img-fluid" alt="news 3">
+                                        <!-- </a> -->
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col">
-                                        Live: Air India flight carrying Indian evacuees from Ukraine lands in Mumbai
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <a href="">
+                                                Upen Biswas, the man who brought down Lalu Prasad
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
-                    <span class="more">
-                        <a href="#">SEE ALL MOST SHARED STORIES</a>
-                    </span>
                 </div>
             </div>
         </div>
-
-    
-    <footer>
-
-    </footer>
+        <div class="footer-wrapper ">
+            <div class="container">
+                <footer class="row">
+                    <div class="col">
+                        <section class="footer-section">
+                            <h6>
+                                <span>
+                                    Other Times Group news sites
+                                </span> 
+                            </h6>
+                            <ul>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-The_Economic_Times#Item_View-2-geturl" title="The Economic Times" href="https://economictimes.indiatimes.com" rel="nofollow">The Economic Times</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Hindi_Economic_Times#Item_View-3-geturl" title="Hindi Economic Times" href="https://economictimes.indiatimes.com/hindi" rel="nofollow">Hindi Economic Times</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Navbharat_Times#Item_View-4-geturl" title="Navbharat Times" href="https://navbharattimes.indiatimes.com" rel="nofollow">Navbharat Times</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Maharashtra_Times#Item_View-5-geturl" title="Maharashtra Times" href="https://maharashtratimes.com/" rel="nofollow">Maharashtra Times</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Vijaya_Karnataka#Item_View-6-geturl" title="Vijaya Karnataka" href="https://vijaykarnataka.com/" rel="nofollow">Vijaya Karnataka</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Telugu_Samayam#Item_View-7-geturl" title="Telugu Samayam" href="https://telugu.samayam.com/" rel="nofollow">Telugu Samayam</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Tamil_Samayam#Item_View-8-geturl" title="Tamil Samayam" href="https://tamil.samayam.com/" rel="nofollow">Tamil Samayam</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Malayalam_Samayam#Item_View-9-geturl" title="Malayalam Samayam" href="https://malayalam.samayam.com/" rel="nofollow">Malayalam Samayam</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Ei_Samay#Item_View-10-geturl" title="Ei Samay" href="https://eisamay.com" rel="nofollow">Ei Samay</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-I_am_Gujarat#Item_View-11-geturl" title="I am Gujarat" href="https://www.iamgujarat.com/" rel="nofollow">I am Gujarat</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Times_Now#Item_View-12-geturl" title="Times Now" href="https://www.timesnownews.com/" rel="nofollow">Times Now</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Times_Now_Navbharat#Item_View-13-geturl" title="Times Now Navbharat" href="https://www.timesnowhindi.com/" rel="nofollow">Times Now Navbharat</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-TimesPoints#Item_View-14-geturl" title="TimesPoints" href="https://www.timespoints.com/#/products?utm_source=TOI&amp;utm_medium=Footer&amp;utm_campaign=TOI_Footer" rel="nofollow">TimesPoints</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Indiatimes#Item_View-15-geturl" title="Indiatimes" href="https://www.indiatimes.com/" rel="nofollow">Indiatimes</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Ei_Samay#Item_View-10-geturl" title="Ei Samay" href="https://eisamay.com" rel="nofollow">Ei Samay</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-I_am_Gujarat#Item_View-11-geturl" title="I am Gujarat" href="https://www.iamgujarat.com/" rel="nofollow">I am Gujarat</a>
+                                </li>
+                                <li>
+                                    <a pg="Footer-level0-Other_Times_Group_News_Sites/level1-Times_Now#Item_View-12-geturl" title="Times Now" href="https://www.timesnownews.com/" rel="nofollow">Times Now</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col">
+                        <section class="footer-section">
+                            <h6>
+                                <span>
+                                    services
+                                </span>
+                            </h6>
+                            <ul>
+                                <li><a target="_blank" rel="nofollow" href="https://www.ads2book.com/?ref=timesofindia" pg="Footer-level0-Services/level1-Ads_2_Book#Item_View-58-geturl">Ads 2 Book</a></li><li><a target="_blank" rel="nofollow" href="https://play.google.com/store/apps/details?id=com.smartspends" pg="Footer-level0-Services/level1-ET_Money_Finance_App#Item_View-60-geturl">ET Money Finance App</a></li><li><a target="_blank" rel="nofollow" href="http://www.coupondunia.in/" pg="Footer-level0-Services/level1-CouponDunia#Item_View-61-geturl">CouponDunia</a></li><li><a target="_blank" rel="nofollow" href="https://www.dineout.co.in/" pg="Footer-level0-Services/level1-Dineout#Item_View-62-geturl">Dineout</a></li><li><a target="_blank" rel="nofollow" href="http://www.magicbricks.com/" pg="Footer-level0-Services/level1-Magic_Bricks#Item_View-64-geturl">Magicbricks</a></li><li><a target="_blank" rel="nofollow" href="http://www.techgig.com" pg="Footer-level0-Services/level1-Techgig#Item_View-65-geturl">Techgig</a></li><li><a target="_blank" rel="nofollow" href="http://www.timesjobs.com/" pg="Footer-level0-Services/level1-Times_Jobs#Item_View-66-geturl">Times Jobs</a></li><li><a target="_blank" rel="nofollow" href="https://play.google.com/store/apps/details?id=in.til.popkorn" pg="Footer-level0-Services/level1-Bollywood_News#Item_View-67-geturl">Bollywood News</a></li><li><a target="_blank" rel="nofollow" href="http://www.timesmobile.in/" pg="Footer-level0-Services/level1-iDiva#Item_View-68-geturl">Times Mobile</a></li><li><a target="_blank" rel="nofollow" href="https://www.gadgetsnow.com/" pg="Footer-level0-Services/level1-Gadgets_Now#Item_View-76-geturl">Gadgets Now</a></li><li><a target="_blank" rel="nofollow" href="http://careers.timesgroup.com/" pg="Footer-level0-Services/level1-careers#Item_View-77-geturl">Careers</a></li><li><a target="_blank" rel="nofollow" href="https://www.colombiaonline.com/" pg="Footer-level0-Services/level1-Colombia#Item_View-78-geturl">Colombia</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </footer>
+            </div>
+        </div>
 </body>
 </html>
